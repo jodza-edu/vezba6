@@ -10,7 +10,6 @@ void main() {
     char rec[50];
     
     int m;
-    int tacno = 0;
     
     scanf("%d", &m);
     printf("\n");
@@ -31,7 +30,6 @@ void main() {
                     recenica[j] = 0;
                 }
             }
-            else tacno = 1;
         }
     } while (!feof(fp1));
 
