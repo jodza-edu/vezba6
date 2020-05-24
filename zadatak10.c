@@ -14,7 +14,7 @@ void main() {
     
     scanf("%d", &m);
     printf("\n");
-
+    //recenice u fajlu razdvaja tacka "."
     do {
         fscanf(fp1, "%s", &rec);
 
