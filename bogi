@@ -22,7 +22,7 @@ int main() {
 }
 
 int printaj(char prva[300], char druga[300]) {
-    printf("%s\n", prva);
-    printf("%s", druga);
+    printf("1.%s\n", prva);
+    printf("2.%s", druga);
     return 0;
 }
