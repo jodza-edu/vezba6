@@ -1,0 +1,18 @@
+#include "stdio.h"
+#include "string.h"
+
+int main() {
+
+    char recenica[300];
+
+    fgets(recenica, 299, stdin);
+    
+    char slovo;
+    scanf("%c", &slovo);
+
+    for (int i = 0; i < strlen(recenica); i++) {
+        if (recenica[i] == 'a') recenica[i] = slovo;
+    }
+    printf("%s",recenica);
+    return 0;
+}
