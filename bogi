@@ -1,0 +1,28 @@
+#include "stdio.h"
+#include "string.h"
+
+int main() {
+
+    char prvaRecenica[300];
+    char drugaRecenica[300];
+    int pPrva = 0, pDruga = 0;
+
+    fgets(prvaRecenica, 299, stdin);
+    fgets(drugaRecenica, 299, stdin);
+
+    for (int i = 0; i < strlen(prvaRecenica) - 1; i++) {
+        if (prvaRecenica[i] == 'p') pPrva++;
+    }
+    for (int i = 0; i < strlen(drugaRecenica) - 1; i++) {
+        if (drugaRecenica[i] == 'p') pDruga++;
+    }
+    if (pPrva >= pDruga) printaj(prvaRecenica, drugaRecenica);
+    else printaj(drugaRecenica, prvaRecenica);
+    return 0;
+}
+
+int printaj(char prva[300], char druga[300]) {
+    printf("%s\n", prva);
+    printf("%s", druga);
+    return 0;
+}
